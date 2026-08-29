@@ -100,6 +100,11 @@ A miss high in the Dockerfile is expensive because everything below it re-runs.
 A miss near the bottom is cheap. **That gap is the entire skill of writing a
 Dockerfile**, and this is what makes it visible.
 
+## Where the numbers came from
+
+[I measured Docker cache waste across 40 popular repos](docs/measuring-docker-cache-waste.md)
+— including the part where the obvious fix breaks a third of them.
+
 ## How it works
 
 1. Runs your build with `--progress=rawjson` and reads the structured output.
