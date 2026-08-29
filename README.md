@@ -1,5 +1,9 @@
 # whycache
 
+[![PyPI](https://img.shields.io/pypi/v/whycache)](https://pypi.org/project/whycache/)
+[![Python](https://img.shields.io/pypi/pyversions/whycache)](https://pypi.org/project/whycache/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 **Docker tells you *that* the build cache broke. `whycache` tells you *why*, which file did it, and what it cost you.**
 
 ![whycache explaining an 11-minute cache miss in psf/black](docs/demo.svg)
@@ -18,12 +22,6 @@ prints which steps re-ran, never why.
 
 ```bash
 pip install whycache
-```
-
-Or from source, until the first PyPI release lands:
-
-```bash
-git clone https://github.com/allaboutaryan/whycache && pip install ./whycache
 ```
 
 No daemon, no account, no config, no network calls. One dependency-free CLI.
