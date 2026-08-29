@@ -87,7 +87,7 @@ and broke `black`'s build with it.
 
 ## The number tells you if your Dockerfile is well built
 
-Same tool, three real projects:
+Same tool, three real projects, four measurements:
 
 | Project | What changed | Cache broke at | Cost |
 |---|---|---|---|
