@@ -1,0 +1,170 @@
+[
+ {
+  "repo": "prefecthq/prefect",
+  "dockerignore": "no .git",
+  "wide_copy": true,
+  "expensive_below": 4,
+  "needs_git": true,
+  "risk": 10
+ },
+ {
+  "repo": "vitessio/vitess",
+  "dockerignore": "no .git",
+  "wide_copy": true,
+  "expensive_below": 3,
+  "needs_git": false,
+  "risk": 8
+ },
+ {
+  "repo": "psf/black",
+  "dockerignore": "none",
+  "wide_copy": true,
+  "expensive_below": 1,
+  "needs_git": true,
+  "risk": 5
+ },
+ {
+  "repo": "traefik/whoami",
+  "dockerignore": "none",
+  "wide_copy": true,
+  "expensive_below": 1,
+  "needs_git": false,
+  "risk": 5
+ },
+ {
+  "repo": "argoproj/argo-cd",
+  "dockerignore": "no .git",
+  "wide_copy": true,
+  "expensive_below": 1,
+  "needs_git": false,
+  "risk": 4
+ },
+ {
+  "repo": "sqlfluff/sqlfluff",
+  "dockerignore": "ok",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "localstack/localstack",
+  "dockerignore": "no .git",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": true,
+  "risk": 0
+ },
+ {
+  "repo": "getredash/redash",
+  "dockerignore": "ok",
+  "wide_copy": true,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "gohugoio/hugo",
+  "dockerignore": "ok",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "goreleaser/goreleaser",
+  "dockerignore": "none",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "minio/minio",
+  "dockerignore": "ok",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "outline/outline",
+  "dockerignore": "ok",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "directus/directus",
+  "dockerignore": "no .git",
+  "wide_copy": true,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "apache/airflow",
+  "dockerignore": "no .git",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "home-assistant/core",
+  "dockerignore": "ok",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "grafana/grafana",
+  "dockerignore": "ok",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "prometheus/prometheus",
+  "dockerignore": "no .git",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "etcd-io/etcd",
+  "dockerignore": "none",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "hashicorp/vault",
+  "dockerignore": "ok",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "hashicorp/consul",
+  "dockerignore": "ok",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ },
+ {
+  "repo": "apache/superset",
+  "dockerignore": "no .git",
+  "wide_copy": false,
+  "expensive_below": 0,
+  "needs_git": false,
+  "risk": 0
+ }
+]

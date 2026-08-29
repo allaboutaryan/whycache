@@ -145,9 +145,6 @@ def diff(old: dict, new: dict) -> dict:
     }
 
 
-def changed_paths(d: dict) -> list:
-    return sorted(d["added"] + d["removed"] + d["changed"])
-
 
 if __name__ == "__main__":
     import shutil

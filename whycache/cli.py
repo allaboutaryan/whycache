@@ -10,7 +10,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from .manifest import build_manifest, changed_paths, diff, load_state, save_state
+from .manifest import build_manifest, diff, load_state, save_state
 
 # Real build steps. Multi-stage builds prefix the stage name, so both of these
 # must match or the tool silently sees zero steps and calls a 5-minute build
@@ -134,7 +134,7 @@ def copy_sources(instr):
     if not m:
         return None
     args = [a for a in m.group(1).split() if not a.startswith("--")]
-    return args[:-1] or None  # last arg is the destination
+    return args[:-1]  # last arg is the destination
 
 
 def previous_instr(miss, old_steps):
@@ -191,16 +191,14 @@ def noise_hits(paths):
     """(pattern, reason, count) for regenerable junk among the changed files."""
     hits = []
     for prefix, pattern, reason in NOISE:
-        n = sum(1 for p in paths if p == prefix.rstrip("/") or p.startswith(prefix)
-                or f"/{prefix}" in f"/{p}")
+        n = sum(1 for p in paths
+                if p == prefix.rstrip("/") or f"/{prefix}" in f"/{p}")
         if n:
             hits.append((pattern, reason, n))
     return hits
 
 
 def human(secs):
-    if secs is None:
-        return "?"
     if secs < 60:
         return f"{secs:.1f}s"
     return f"{int(secs // 60)}m{int(secs % 60):02d}s"
@@ -328,15 +326,13 @@ def main(argv):
     changed = []
     if miss and have_baseline:
         d = diff(old.get("manifest", {}), new_manifest)
-        changed = blame(changed_paths(d), copy_sources(miss["instr"]))
+        changed = blame(sorted(d["added"] + d["removed"] + d["changed"]),
+                        copy_sources(miss["instr"]))
 
     report(steps, miss, changed, cold, have_baseline, build_needs_git(context),
            previous_instr(miss, (old or {}).get("steps")) if miss else None)
     return 0
 
-
-if __name__ == "__main__":
-    sys.exit(main(sys.argv))
 
 
 def cli():

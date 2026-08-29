@@ -12,7 +12,7 @@ Docker's rules (moby/patternmatcher), which are *not* gitignore's:
 """
 
 import re
-from pathlib import PurePosixPath
+from pathlib import Path
 
 
 def _to_regex(pattern: str) -> re.Pattern:
@@ -62,7 +62,7 @@ class Matcher:
 
     @classmethod
     def from_context(cls, context_dir):
-        f = PurePosixPath(str(context_dir)) / ".dockerignore"
+        f = Path(context_dir) / ".dockerignore"
         try:
             with open(f, encoding="utf-8") as fh:
                 return cls(fh.read())
@@ -84,9 +84,3 @@ class Matcher:
             if any(regex.match(c) for c in candidates):
                 verdict = not negated
         return verdict
-
-
-if __name__ == "__main__":
-    m = Matcher("*.log\n!keep.log\n")
-    assert m.excluded("a.log") and not m.excluded("keep.log")
-    print("ok — run test_dockerignore.py for the full set")
