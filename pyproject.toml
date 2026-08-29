@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "whycache"
+version = "0.1.0"
+description = "Explain why your Docker build cache broke, and what it cost"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = ["docker", "buildkit", "cache", "build", "devops", "ci"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Build Tools",
+]
+dependencies = []
+
+[project.scripts]
+whycache = "whycache.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/allaboutaryan/whycache"
+Issues = "https://github.com/allaboutaryan/whycache/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["whycache"]
