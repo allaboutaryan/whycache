@@ -19,8 +19,8 @@
   <text x="62" y="176" fill="#f0883e">.git/index</text>
 
   <text x="40" y="212" fill="#c9d1d9">Cost - </text>
-  <text x="101" y="212" fill="#f85149" font-weight="bold">11m00s</text>
-  <text x="160" y="212" fill="#c9d1d9">of this 11m00s build.</text>
+  <text x="101" y="212" fill="#f85149" font-weight="bold">5m14s</text>
+  <text x="160" y="212" fill="#c9d1d9">of this 5m14s build.</text>
 
   <text x="40" y="256" fill="#d29922">.git/ is breaking the cache, but do NOT ignore it:</text>
   <text x="62" y="280" fill="#8b949e">pyproject.toml reads git metadata at build time, so</text>

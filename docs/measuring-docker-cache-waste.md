@@ -52,17 +52,17 @@ change, nothing but a commit — to see what that alone cost.
 
 | Repo | Cache broke at | Cost of one commit |
 |---|---|---|
-| [psf/black](https://github.com/psf/black) | `COPY . /src/`, step 3 of 6 | **~11 minutes** |
+| [psf/black](https://github.com/psf/black) | `COPY . /src/`, step 3 of 6 | **5m14s** |
 | [traefik/whoami](https://github.com/traefik/whoami) | `COPY . .`, step 7 | 10.6s |
 | [sqlfluff](https://github.com/sqlfluff/sqlfluff) | `COPY src ./src`, step 10 of 12 | 7.5s |
 
-`black` is the one worth sitting with. Eleven minutes of rebuild, triggered by
-a commit that changed no code the build cares about, on every single build.
+`black` is the one worth sitting with. Five minutes of rebuild, triggered by a
+commit that changed no code the build cares about, on every single build.
 Nobody there did anything wrong. It is simply invisible.
 
 sqlfluff is the control case. It copies specific paths instead of the whole
-tree, so its miss lands near the bottom and costs seconds. **The gap between 11
-minutes and 7 seconds is the entire skill of writing a Dockerfile**, and
+tree, so its miss lands near the bottom and costs seconds. **The gap between five
+minutes and seven seconds is the entire skill of writing a Dockerfile**, and
 neither number is printed anywhere.
 
 ## The part I got wrong
@@ -118,7 +118,7 @@ X Cache broke at builder step 3:  COPY . /src/
 
     .git/index
 
-  Cost - 11m00s of this 11m00s build.
+  Cost - 5m14s of this 5m14s build.
 
   .git/ is breaking the cache, but do NOT ignore it:
     pyproject.toml reads git metadata at build time, so excluding

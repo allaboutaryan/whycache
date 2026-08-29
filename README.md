@@ -6,10 +6,10 @@
 
 **Docker tells you *that* the build cache broke. `whycache` tells you *why*, which file did it, and what it cost you.**
 
-![whycache explaining an 11-minute cache miss in psf/black](docs/demo.svg)
+![whycache explaining a five-minute cache miss in psf/black](docs/demo.svg)
 
 That is a real run against [psf/black](https://github.com/psf/black). Every commit
-costs an eleven-minute rebuild, because `COPY . /src/` pulls in `.git`, which
+costs a five-minute rebuild, because `COPY . /src/` pulls in `.git`, which
 changes on every commit, and the expensive `apt install` + `pip install` +
 `hatch build` steps all sit below it.
 
@@ -91,7 +91,7 @@ Same tool, three real projects, four measurements:
 
 | Project | What changed | Cache broke at | Cost |
 |---|---|---|---|
-| [psf/black](https://github.com/psf/black) | one commit | `COPY . /src/` (step 3 of 6) | **11m00s** |
+| [psf/black](https://github.com/psf/black) | one commit | `COPY . /src/` (step 3 of 6) | **5m14s** |
 | [sqlfluff](https://github.com/sqlfluff/sqlfluff) | one source file | `COPY src ./src` (step 10 of 12) | 7.5s |
 | [traefik/whoami](https://github.com/traefik/whoami) | `go.mod` | `COPY go.mod .` (step 4) | 30.2s |
 | traefik/whoami | `app.go` | `COPY . .` (step 7) | 29.6s |
