@@ -3,6 +3,11 @@
 Run: python test_dockerignore.py   (or: pytest test_dockerignore.py)
 """
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from whycache.dockerignore import Matcher
 
 CASES = [

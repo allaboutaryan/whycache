@@ -8,6 +8,11 @@ multi-minute builds to notice. This sequence catches that class of bug.
 Run: python test_e2e.py
 """
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import subprocess
 import time
 import sys

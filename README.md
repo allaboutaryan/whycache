@@ -156,10 +156,28 @@ Bug reports with a Dockerfile that reproduces are the most useful thing you can
 send. The test suite runs without Docker except for `test_e2e.py`:
 
 ```bash
-python test_dockerignore.py    # .dockerignore matching
-python test_whycache.py        # step parsing, blame, git-versioning guard
-python -m whycache.manifest    # context fingerprinting
-python test_e2e.py             # full run against a real build (needs Docker)
+python tests/test_dockerignore.py   # .dockerignore matching
+python tests/test_build.py          # step parsing, miss detection
+python tests/test_blame.py          # attribution and the git-versioning guard
+python tests/test_manifest.py       # context fingerprinting
+python tests/test_e2e.py            # full run against a real build (needs Docker)
+```
+
+Or all at once with `pytest tests/`. Everything but `test_e2e.py` runs without
+Docker, and all of them run from a fresh clone with nothing installed.
+
+### Layout
+
+```
+whycache/
+  build.py         run docker build, read BuildKit's progress stream
+  blame.py         decide what caused the miss, and what is safe to advise
+  report.py        turn a diagnosis into something actionable
+  manifest.py      fingerprint the build context
+  dockerignore.py  Docker's ignore semantics
+  cli.py           wire it together, own no logic
+tests/
+research/          the survey behind the write-up; not part of the package
 ```
 
 ## License
