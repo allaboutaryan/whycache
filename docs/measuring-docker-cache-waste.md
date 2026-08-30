@@ -36,16 +36,41 @@ the build.
 
 ## What I measured
 
-I pulled the `Dockerfile` and `.dockerignore` from 40 well-known repositories
-and looked for one pattern: a whole-context `COPY` with expensive work below
-it, and `.git` not excluded.
+I read the `Dockerfile` and `.dockerignore` of 500 popular repositories
+straight from the GitHub API — no clones, no builds — looking for one pattern:
+a whole-context `COPY` with expensive work below it, and `.git` not excluded.
 
-| | |
-|---|---|
-| Repos checked | 40 |
-| With a root `Dockerfile` | 21 |
-| Whole-context `COPY` above expensive steps | 6 |
-| **No `.dockerignore` at all** | **3** |
+The sample is popular *deployable* software: projects tagged `docker`,
+`kubernetes`, `self-hosted`, `devops`, `monitoring`, `database` and the like.
+Sorting the most-starred repos by language instead returns mostly
+awesome-lists and tutorials, which ship no container at all.
+
+| | count | share |
+|---|---|---|
+| Repos read | 500 | |
+| With a root `Dockerfile` | 151 | 30% |
+| **Invalidating their cache on every commit** | **33** | **22%** |
+| ...where the obvious fix breaks the build | 11 | 33% of those |
+| ...where it is safe | 22 | 67% of those |
+
+**One in five** containerised projects rebuilds from scratch every time someone
+commits.
+
+### Go is three times worse than everything else
+
+| Language | With a Dockerfile | Wasting cache | |
+|---|---|---|---|
+| Go | 67 | 22 | **33%** |
+| TypeScript | 23 | 2 | 9% |
+| Python | 21 | 2 | 10% |
+| JavaScript | 10 | 1 | 10% |
+
+I did not expect that, and I do not think it is about Go being careless. The
+canonical Go Dockerfile is four lines — `COPY . .`, `RUN go build` — and it
+*works*. There is no `requirements.txt` step forcing you to think about what to
+copy first, the way there is in Python or Node. The habit of splitting
+`COPY go.mod go.sum` out ahead of `go mod download` is something you learn
+after the build gets slow, not something the shape of the language suggests.
 
 Then I built the affected ones and made a single empty commit — no source
 change, nothing but a commit — to see what that alone cost.
@@ -77,9 +102,10 @@ the build context and the version can no longer be computed, so `hatch build`
 exits non-zero. The advice did not make the build slower. It made it **not
 build**.
 
-That is not a rare corner. Of the six repos where `.git` was wrecking the
-cache, **three read git metadata at build time** — `hatch-vcs`,
-`setuptools-scm`, and friends. The obvious fix breaks half of them.
+That is not a rare corner. Of the 33 repos wrecking their cache, **11 read git
+metadata at build time** — `setuptools-scm`, `hatch-vcs`, `git describe` in a
+Makefile. The obvious fix breaks a third of them, and the list is not obscure:
+gitea, gogs, argo-cd, velero, atlantis, prometheus-operator.
 
 If you take one thing from this, take that: before you add `.git` to a
 `.dockerignore`, grep the project for `setuptools-scm`, `hatch-vcs`,
@@ -91,8 +117,8 @@ Three options, cheapest first:
 
 1. **Pass the version in as a build arg.** vitess already does this —
    `ARG BUILD_GIT_REV` — which is the right answer. (It still ships `.git`
-   into the context, so it pays the cache cost for nothing. That one is a
-   genuine easy win.)
+   into the context, so it pays the cache cost for nothing. It is top of the
+   safe-to-fix list for exactly that reason.)
 2. **Copy `.git` in a later stage**, below the expensive steps, so it stops
    invalidating them.
 3. **Compute the version outside the build** and write it to a file the
@@ -130,8 +156,11 @@ learned to say it.
 
 ---
 
-**Caveats, honestly.** 40 repos is a sample, not a census, and it skews toward
-infrastructure projects that happen to ship a root `Dockerfile` — plenty of
-projects keep theirs elsewhere and were not counted. All timings are from one
-laptop, so treat them as orders of magnitude, not benchmarks. The survey script
-and the raw results are in the repo if you want to run it against your own set.
+**Caveats, honestly.** Only root-level `Dockerfile`s were read; plenty of
+projects keep theirs under `build/` or `docker/` and were not counted, so the
+real figure is a floor rather than a ceiling. The sample is popular deployable
+software, not all software. Detection is static — a `COPY . .` above an
+`apt-get install` is strong evidence of waste, not proof of it, and the three
+repos I actually built are the ones I can vouch for. All timings come from one
+Windows laptop; treat them as orders of magnitude. The survey script, its
+response cache and the raw results are in the repo, so the numbers reproduce.

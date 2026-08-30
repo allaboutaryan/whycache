@@ -6,3 +6,4 @@ build/
 real/
 probe.py
 HANDOFF.md
+research/cache.json

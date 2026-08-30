@@ -1,170 +1,1512 @@
 [
  {
-  "repo": "prefecthq/prefect",
+  "repo": "netdata/netdata",
+  "language": "Go",
+  "stars": 80358,
   "dockerignore": "no .git",
-  "wide_copy": true,
-  "expensive_below": 4,
-  "needs_git": true,
-  "risk": 10
- },
- {
-  "repo": "vitessio/vitess",
-  "dockerignore": "no .git",
-  "wide_copy": true,
-  "expensive_below": 3,
+  "expensive_below": 0,
+  "wasting": false,
   "needs_git": false,
-  "risk": 8
+  "pr_safe": false
  },
  {
-  "repo": "psf/black",
+  "repo": "moby/moby",
+  "language": "Go",
+  "stars": 72020,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "dani-garcia/vaultwarden",
+  "language": "Rust",
+  "stars": 66506,
+  "dockerignore": "no .git",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "traefik/traefik",
+  "language": "Go",
+  "stars": 64666,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "appwrite/appwrite",
+  "language": "TypeScript",
+  "stars": 57172,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "wagoodman/dive",
+  "language": "Go",
+  "stars": 54517,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "dockur/windows",
+  "language": "Shell",
+  "stars": 53083,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "sickcodes/Docker-OSX",
+  "language": "Shell",
+  "stars": 52897,
   "dockerignore": "none",
-  "wide_copy": true,
-  "expensive_below": 1,
-  "needs_git": true,
-  "risk": 5
- },
- {
-  "repo": "traefik/whoami",
-  "dockerignore": "none",
-  "wide_copy": true,
-  "expensive_below": 1,
+  "expensive_below": 0,
+  "wasting": false,
   "needs_git": false,
-  "risk": 5
+  "pr_safe": false
  },
  {
-  "repo": "argoproj/argo-cd",
+  "repo": "mastodon/mastodon",
+  "language": "Ruby",
+  "stars": 50260,
+  "dockerignore": "ok",
+  "expensive_below": 1,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "gogs/gogs",
+  "language": "Go",
+  "stars": 47784,
   "dockerignore": "no .git",
-  "wide_copy": true,
   "expensive_below": 1,
-  "needs_git": false,
-  "risk": 4
- },
- {
-  "repo": "sqlfluff/sqlfluff",
-  "dockerignore": "ok",
-  "wide_copy": false,
-  "expensive_below": 0,
-  "needs_git": false,
-  "risk": 0
- },
- {
-  "repo": "localstack/localstack",
-  "dockerignore": "no .git",
-  "wide_copy": false,
-  "expensive_below": 0,
+  "wasting": true,
   "needs_git": true,
-  "risk": 0
- },
- {
-  "repo": "getredash/redash",
-  "dockerignore": "ok",
-  "wide_copy": true,
-  "expensive_below": 0,
-  "needs_git": false,
-  "risk": 0
- },
- {
-  "repo": "gohugoio/hugo",
-  "dockerignore": "ok",
-  "wide_copy": false,
-  "expensive_below": 0,
-  "needs_git": false,
-  "risk": 0
- },
- {
-  "repo": "goreleaser/goreleaser",
-  "dockerignore": "none",
-  "wide_copy": false,
-  "expensive_below": 0,
-  "needs_git": false,
-  "risk": 0
- },
- {
-  "repo": "minio/minio",
-  "dockerignore": "ok",
-  "wide_copy": false,
-  "expensive_below": 0,
-  "needs_git": false,
-  "risk": 0
+  "pr_safe": false
  },
  {
   "repo": "outline/outline",
+  "language": "TypeScript",
+  "stars": 40381,
   "dockerignore": "ok",
-  "wide_copy": false,
   "expensive_below": 0,
+  "wasting": false,
   "needs_git": false,
-  "risk": 0
+  "pr_safe": false
  },
  {
-  "repo": "directus/directus",
-  "dockerignore": "no .git",
-  "wide_copy": true,
-  "expensive_below": 0,
-  "needs_git": false,
-  "risk": 0
- },
- {
-  "repo": "apache/airflow",
-  "dockerignore": "no .git",
-  "wide_copy": false,
-  "expensive_below": 0,
-  "needs_git": false,
-  "risk": 0
- },
- {
-  "repo": "home-assistant/core",
+  "repo": "AstrBotDevs/AstrBot",
+  "language": "Python",
+  "stars": 39810,
   "dockerignore": "ok",
-  "wide_copy": false,
-  "expensive_below": 0,
+  "expensive_below": 1,
+  "wasting": false,
   "needs_git": false,
-  "risk": 0
+  "pr_safe": false
  },
  {
-  "repo": "grafana/grafana",
-  "dockerignore": "ok",
-  "wide_copy": false,
-  "expensive_below": 0,
-  "needs_git": false,
-  "risk": 0
- },
- {
-  "repo": "prometheus/prometheus",
+  "repo": "harness/harness",
+  "language": "Go",
+  "stars": 38172,
   "dockerignore": "no .git",
-  "wide_copy": false,
-  "expensive_below": 0,
+  "expensive_below": 1,
+  "wasting": true,
   "needs_git": false,
-  "risk": 0
+  "pr_safe": true
+ },
+ {
+  "repo": "docker/compose",
+  "language": "Go",
+  "stars": 38079,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "aquasecurity/trivy",
+  "language": "Go",
+  "stars": 37695,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "Dokploy/dokploy",
+  "language": "TypeScript",
+  "stars": 36974,
+  "dockerignore": "ok",
+  "expensive_below": 4,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "glanceapp/glance",
+  "language": "Go",
+  "stars": 36731,
+  "dockerignore": "no .git",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "gethomepage/homepage",
+  "language": "JavaScript",
+  "stars": 32306,
+  "dockerignore": "no .git",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "dokku/dokku",
+  "language": "Shell",
+  "stars": 32117,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "authelia/authelia",
+  "language": "Go",
+  "stars": 28746,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "lissy93/dashy",
+  "language": "Vue",
+  "stars": 26330,
+  "dockerignore": "ok",
+  "expensive_below": 3,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "eip-work/kuboard-press",
+  "language": "HTML",
+  "stars": 25192,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "argoproj/argo-cd",
+  "language": "Go",
+  "stars": 24038,
+  "dockerignore": "no .git",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "air-verse/air",
+  "language": "Go",
+  "stars": 23937,
+  "dockerignore": "no .git",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "jhipster/generator-jhipster",
+  "language": "TypeScript",
+  "stars": 22446,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "dockur/macos",
+  "language": "Shell",
+  "stars": 21485,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "Zeyi-Lin/HivisionIDPhotos",
+  "language": "Python",
+  "stars": 21454,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "DrewThomasson/ebook2audiobook",
+  "language": "Python",
+  "stars": 20072,
+  "dockerignore": "ok",
+  "expensive_below": 1,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "verdaccio/verdaccio",
+  "language": "TypeScript",
+  "stars": 17848,
+  "dockerignore": "no .git",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "bcicen/ctop",
+  "language": "Go",
+  "stars": 17831,
+  "dockerignore": "none",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "ramitsurana/awesome-kubernetes",
+  "language": "Shell",
+  "stars": 16062,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "dutchcoders/transfer.sh",
+  "language": "Go",
+  "stars": 15887,
+  "dockerignore": "ok",
+  "expensive_below": 1,
+  "wasting": false,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "JoeanAmier/TikTokDownloader",
+  "language": "Python",
+  "stars": 15642,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "FlareSolverr/FlareSolverr",
+  "language": "Python",
+  "stars": 15353,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "passteque/gluetun",
+  "language": "Go",
+  "stars": 15347,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "jaywcjlove/reference",
+  "language": "Dockerfile",
+  "stars": 15198,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "alam00000/bentopdf",
+  "language": "JavaScript",
+  "stars": 14965,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "minio/minio",
+  "language": "Go",
+  "stars": 61376,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
  },
  {
   "repo": "etcd-io/etcd",
+  "language": "Go",
+  "stars": 52207,
   "dockerignore": "none",
-  "wide_copy": false,
   "expensive_below": 0,
+  "wasting": false,
   "needs_git": false,
-  "risk": 0
+  "pr_safe": false
  },
  {
-  "repo": "hashicorp/vault",
-  "dockerignore": "ok",
-  "wide_copy": false,
+  "repo": "derailed/k9s",
+  "language": "Go",
+  "stars": 34469,
+  "dockerignore": "no .git",
   "expensive_below": 0,
+  "wasting": false,
   "needs_git": false,
-  "risk": 0
+  "pr_safe": false
+ },
+ {
+  "repo": "k3s-io/k3s",
+  "language": "Go",
+  "stars": 33851,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
  },
  {
   "repo": "hashicorp/consul",
+  "language": "Go",
+  "stars": 30052,
   "dockerignore": "ok",
-  "wide_copy": false,
   "expensive_below": 0,
+  "wasting": false,
   "needs_git": false,
-  "risk": 0
+  "pr_safe": false
  },
  {
-  "repo": "apache/superset",
+  "repo": "vitessio/vitess",
+  "language": "Go",
+  "stars": 21279,
   "dockerignore": "no .git",
-  "wide_copy": false,
-  "expensive_below": 0,
+  "expensive_below": 3,
+  "wasting": true,
   "needs_git": false,
-  "risk": 0
+  "pr_safe": true
+ },
+ {
+  "repo": "kubernetes-sigs/kubespray",
+  "language": "Jinja",
+  "stars": 18710,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "argoproj/argo-workflows",
+  "language": "Go",
+  "stars": 16943,
+  "dockerignore": "ok",
+  "expensive_below": 9,
+  "wasting": false,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "ubicloud/ubicloud",
+  "language": "Ruby",
+  "stars": 12258,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "gravitl/netmaker",
+  "language": "Go",
+  "stars": 11771,
+  "dockerignore": "no .git",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "easzlab/kubeasz",
+  "language": "Jinja",
+  "stars": 11415,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "loft-sh/vcluster",
+  "language": "Go",
+  "stars": 11278,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "dexidp/dex",
+  "language": "Go",
+  "stars": 11072,
+  "dockerignore": "no .git",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "quay/clair",
+  "language": "Go",
+  "stars": 11054,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "siderolabs/talos",
+  "language": "Go",
+  "stars": 11052,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "nicolaka/netshoot",
+  "language": "Shell",
+  "stars": 10964,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "TykTechnologies/tyk",
+  "language": "Go",
+  "stars": 10809,
+  "dockerignore": "no .git",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "kubernetes/kompose",
+  "language": "Go",
+  "stars": 10619,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "kedacore/keda",
+  "language": "Go",
+  "stars": 10477,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "stakater/Reloader",
+  "language": "Go",
+  "stars": 10376,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "velero-io/velero",
+  "language": "Go",
+  "stars": 10259,
+  "dockerignore": "no .git",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "open-webui/open-webui",
+  "language": "Python",
+  "stars": 150419,
+  "dockerignore": "no .git",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "go-gitea/gitea",
+  "language": "Go",
+  "stars": 57678,
+  "dockerignore": "no .git",
+  "expensive_below": 3,
+  "wasting": true,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "HKUDS/nanobot",
+  "language": "Python",
+  "stars": 47536,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "siyuan-note/siyuan",
+  "language": "TypeScript",
+  "stars": 46057,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "amruthpillai/reactive-resume",
+  "language": "TypeScript",
+  "stars": 41958,
+  "dockerignore": "ok",
+  "expensive_below": 2,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "appsmithorg/appsmith",
+  "language": "TypeScript",
+  "stars": 40785,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "photoprism/photoprism",
+  "language": "Go",
+  "stars": 40124,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "khoj-ai/khoj",
+  "language": "Python",
+  "stars": 36797,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "filebrowser/filebrowser",
+  "language": "Go",
+  "stars": 35971,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "dgtlmoon/changedetection.io",
+  "language": "Python",
+  "stars": 33421,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "plausible/analytics",
+  "language": "Elixir",
+  "stars": 28806,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "ArchiveBox/ArchiveBox",
+  "language": "Python",
+  "stars": 28208,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "nocobase/nocobase",
+  "language": "TypeScript",
+  "stars": 23940,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "navidrome/navidrome",
+  "language": "Go",
+  "stars": 23226,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "knadh/listmonk",
+  "language": "Go",
+  "stars": 23185,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "fosrl/pangolin",
+  "language": "TypeScript",
+  "stars": 22552,
+  "dockerignore": "ok",
+  "expensive_below": 2,
+  "wasting": false,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "vxcontrol/pentagi",
+  "language": "Go",
+  "stars": 22178,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "linkwarden/linkwarden",
+  "language": "TypeScript",
+  "stars": 19637,
+  "dockerignore": "ok",
+  "expensive_below": 3,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "C4illin/ConvertX",
+  "language": "TypeScript",
+  "stars": 18633,
+  "dockerignore": "ok",
+  "expensive_below": 1,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "docusealco/docuseal",
+  "language": "Ruby",
+  "stars": 18405,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "AsyncFuncAI/deepwiki-open",
+  "language": "Python",
+  "stars": 17821,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "suitenumerique/docs",
+  "language": "Python",
+  "stars": 16755,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "alexta69/metube",
+  "language": "Python",
+  "stars": 14554,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "advplyr/audiobookshelf",
+  "language": "JavaScript",
+  "stars": 14188,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "zedeus/nitter",
+  "language": "Nim",
+  "stars": 14056,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "rmyndharis/OpenWA",
+  "language": "TypeScript",
+  "stars": 13401,
+  "dockerignore": "ok",
+  "expensive_below": 4,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "liketrek/TREK",
+  "language": "TypeScript",
+  "stars": 12991,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "plankanban/planka",
+  "language": "JavaScript",
+  "stars": 12465,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "rommapp/romm",
+  "language": "Python",
+  "stars": 12447,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "illacloud/illa-builder",
+  "language": "TypeScript",
+  "stars": 12311,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "TwiN/gatus",
+  "language": "Go",
+  "stars": 11933,
+  "dockerignore": "ok",
+  "expensive_below": 1,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "bastienwirtz/homer",
+  "language": "Vue",
+  "stars": 11587,
+  "dockerignore": "ok",
+  "expensive_below": 1,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "Kareadita/Kavita",
+  "language": "C#",
+  "stars": 11586,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "owncast/owncast",
+  "language": "Go",
+  "stars": 11475,
+  "dockerignore": "none",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "ekzhang/bore",
+  "language": "Rust",
+  "stars": 11474,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "0xJacky/nginx-ui",
+  "language": "Go",
+  "stars": 11466,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "MemTensor/MemOS",
+  "language": "TypeScript",
+  "stars": 11091,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "EKKOLearnAI/hermes-studio",
+  "language": "TypeScript",
+  "stars": 10701,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "iib0011/omni-tools",
+  "language": "TypeScript",
+  "stars": 10100,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "kestra-io/kestra",
+  "language": "Java",
+  "stars": 27952,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "probelabs/goreplay",
+  "language": "Go",
+  "stars": 19320,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "Unleash/unleash",
+  "language": "TypeScript",
+  "stars": 13771,
+  "dockerignore": "no .git",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "infracost/infracost",
+  "language": "Go",
+  "stars": 12499,
+  "dockerignore": "no .git",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "meolu/walle-web",
+  "language": "Python",
+  "stars": 11993,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "khuedoan/homelab",
+  "language": "Python",
+  "stars": 9564,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "runatlantis/atlantis",
+  "language": "Go",
+  "stars": 9267,
+  "dockerignore": "no .git",
+  "expensive_below": 5,
+  "wasting": true,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "cloudnative-pg/cloudnative-pg",
+  "language": "Go",
+  "stars": 9214,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "certimate-go/certimate",
+  "language": "Go",
+  "stars": 9135,
+  "dockerignore": "ok",
+  "expensive_below": 2,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "bridgecrewio/checkov",
+  "language": "Python",
+  "stars": 8976,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "databasus/databasus",
+  "language": "Go",
+  "stars": 8375,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "chef/chef",
+  "language": "Ruby",
+  "stars": 8231,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "kubernetes-sigs/headlamp",
+  "language": "TypeScript",
+  "stars": 7172,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "aquasecurity/tfsec",
+  "language": "Go",
+  "stars": 7034,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "infobyte/faraday",
+  "language": "Python",
+  "stars": 6697,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "goss-org/goss",
+  "language": "Go",
+  "stars": 5957,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "learntocloud/learn-to-cloud",
+  "language": "CSS",
+  "stars": 5776,
+  "dockerignore": "none",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "micro/go-micro",
+  "language": "Go",
+  "stars": 23048,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "kubevela/kubevela",
+  "language": "Go",
+  "stars": 7889,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "evrone/go-clean-template",
+  "language": "Go",
+  "stars": 7663,
+  "dockerignore": "ok",
+  "expensive_below": 1,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "apache/dubbo-admin",
+  "language": "Go",
+  "stars": 4062,
+  "dockerignore": "none",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "superstreamlabs/memphis",
+  "language": "Go",
+  "stars": 3440,
+  "dockerignore": "no .git",
+  "expensive_below": 3,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "ExpressGateway/express-gateway",
+  "language": "JavaScript",
+  "stars": 3031,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "koala73/worldmonitor",
+  "language": "TypeScript",
+  "stars": 85031,
+  "dockerignore": "ok",
+  "expensive_below": 2,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "grafana/grafana",
+  "language": "TypeScript",
+  "stars": 76513,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "prometheus/prometheus",
+  "language": "Go",
+  "stars": 65907,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "influxdata/influxdb",
+  "language": "Rust",
+  "stars": 31732,
+  "dockerignore": "none",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "allinurl/goaccess",
+  "language": "C",
+  "stars": 20884,
+  "dockerignore": "none",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "bettercap/bettercap",
+  "language": "Go",
+  "stars": 19910,
+  "dockerignore": "none",
+  "expensive_below": 3,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "sqshq/sampler",
+  "language": "Go",
+  "stars": 14793,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "thanos-io/thanos",
+  "language": "Go",
+  "stars": 14190,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "Syllo/nvtop",
+  "language": "C",
+  "stars": 10949,
+  "dockerignore": "no .git",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "nezhahq/nezha",
+  "language": "Go",
+  "stars": 10291,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "prometheus-operator/prometheus-operator",
+  "language": "Go",
+  "stars": 9976,
+  "dockerignore": "none",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "aksakalli/gtop",
+  "language": "JavaScript",
+  "stars": 9930,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "prometheus/alertmanager",
+  "language": "Go",
+  "stars": 8600,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "coroot/coroot",
+  "language": "Go",
+  "stars": 7897,
+  "dockerignore": "no .git",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "aceberg/WatchYourLAN",
+  "language": "Go",
+  "stars": 7555,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "statping/statping",
+  "language": "Vue",
+  "stars": 7291,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "mher/flower",
+  "language": "Python",
+  "stars": 7236,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "open-falcon/falcon-plus",
+  "language": "Go",
+  "stars": 7233,
+  "dockerignore": "no .git",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "XuehaiPan/nvitop",
+  "language": "Python",
+  "stars": 7129,
+  "dockerignore": "no .git",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "rcourtman/Pulse",
+  "language": "Go",
+  "stars": 6643,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "Tautulli/Tautulli",
+  "language": "Python",
+  "stars": 6572,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "kubernetes/kube-state-metrics",
+  "language": "Go",
+  "stars": 6191,
+  "dockerignore": "none",
+  "expensive_below": 1,
+  "wasting": true,
+  "needs_git": true,
+  "pr_safe": false
+ },
+ {
+  "repo": "Helicone/helicone",
+  "language": "TypeScript",
+  "stars": 6115,
+  "dockerignore": "ok",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "komari-monitor/komari",
+  "language": "Go",
+  "stars": 6023,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "arachnys/cabot",
+  "language": "JavaScript",
+  "stars": 5675,
+  "dockerignore": "none",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "a597873885/webfunny_monitor",
+  "language": "JavaScript",
+  "stars": 5301,
+  "dockerignore": "ok",
+  "expensive_below": 1,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "rajnandan1/kener",
+  "language": "Svelte",
+  "stars": 5137,
+  "dockerignore": "ok",
+  "expensive_below": 2,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "sitespeedio/sitespeed.io",
+  "language": "JavaScript",
+  "stars": 5018,
+  "dockerignore": "no .git",
+  "expensive_below": 0,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "ElasticHQ/elasticsearch-HQ",
+  "language": "JavaScript",
+  "stars": 4994,
+  "dockerignore": "ok",
+  "expensive_below": 1,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
+ },
+ {
+  "repo": "meilisearch/meilisearch",
+  "language": "Rust",
+  "stars": 59135,
+  "dockerignore": "no .git",
+  "expensive_below": 2,
+  "wasting": true,
+  "needs_git": false,
+  "pr_safe": true
+ },
+ {
+  "repo": "metabase/metabase",
+  "language": "Clojure",
+  "stars": 48998,
+  "dockerignore": "ok",
+  "expensive_below": 2,
+  "wasting": false,
+  "needs_git": false,
+  "pr_safe": false
  }
 ]

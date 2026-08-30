@@ -102,8 +102,9 @@ Dockerfile**, and this is what makes it visible.
 
 ## Where the numbers came from
 
-[I measured Docker cache waste across 40 popular repos](docs/measuring-docker-cache-waste.md)
-— including the part where the obvious fix breaks a third of them.
+[I read the Dockerfile of 500 popular projects](docs/measuring-docker-cache-waste.md).
+One in five rebuilds from scratch on every commit — and for a third of those,
+adding `.git` to `.dockerignore` does not slow the build down, it breaks it.
 
 ## How it works
 
