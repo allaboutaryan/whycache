@@ -5,3 +5,4 @@ build/
 .venv/
 real/
 probe.py
+HANDOFF.md
